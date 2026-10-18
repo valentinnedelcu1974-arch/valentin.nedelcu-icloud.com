@@ -1,0 +1,22 @@
+name: RadioOnlinePro
+options:
+  bundleIdPrefix: com.radioonlinepro
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+    IPHONEOS_DEPLOYMENT_TARGET: '17.0'
+    TARGETED_DEVICE_FAMILY: '1'
+targets:
+  RadioOnlinePro:
+    type: application
+    platform: iOS
+    sources:
+      - RadioOnlineProApp.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.radioonlinepro.player
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UIBackgroundModes: audio
+        INFOPLIST_KEY_CFBundleDisplayName: Radio Online Pro
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ''
